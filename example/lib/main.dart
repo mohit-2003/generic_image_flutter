@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:generic_image/generic_image.dart';
 
-void main() => runApp(GenericImageExampleApp());
+void main() => runApp(const GenericImageExampleApp());
 
 class GenericImageExampleApp extends StatelessWidget {
+  const GenericImageExampleApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -11,12 +13,14 @@ class GenericImageExampleApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -66,7 +70,7 @@ class _HomePageState extends State<HomePage> {
                 const Padding(
                   padding: EdgeInsets.only(top: 20.0),
                   child: GenericImage(
-                    src: 'assets/facebook-square-icon.svg',
+                    src: 'assets/home-icon.svg',
                     format: ImageFormat.svg,
                     height: 250,
                     width: 200,

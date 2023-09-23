@@ -1,5 +1,5 @@
 name: generic_image
-description: A new Flutter package project.
+description: A Flutter package to show images from network, assets and local file system with placeholder and error widget support.
 version: 0.0.1
 homepage: https://github.com/mohit-2003/generic_image_flutter
 
